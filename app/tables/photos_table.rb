@@ -11,6 +11,8 @@ class PhotosTable < TableCloth::Base
     end
   end
   
+config.table.class = "table table-bordered"
+
   # Define columns with the #column method
   # column :name, :email
 
