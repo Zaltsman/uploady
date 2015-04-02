@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg' #stands for postgres
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -14,6 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'rails_12factor', group: :production #this gem will only be required on a production env't (heroku)
 gem 'carrierwave' 
 gem 'table_cloth' 
 gem 'simple_form' 
